@@ -199,7 +199,7 @@ In private route
 
 [Shopbondhu website](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/10-website-browser_01.png)  
 ## Task 9: Test the private server (NAT check)
-Private EC2 can’t reach the internet (e.g. yum update or apt install hangs), these are the usual causes, roughly in order of likelihood:
+Private EC2 can’t reach the internet (sudo apt update), these are the usual causes, roughly in order of likelihood:
 
 1. No NAT Gateway, or the route is missing. The private subnet’s route table needs 0.0.0.0/0 → nat-xxxx. Without it, the server has no path out.
 2. NAT Gateway is in the wrong subnet. It must sit in the public subnet, and that subnet’s route table must have 0.0.0.0/0 → Internet Gateway. A NAT in a private subnet has no way out itself.
