@@ -133,9 +133,6 @@ In private route
 3. Instance Type select t3.micro
 
 [Launch instance_01](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_01.png)
-[Launch instance_02](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_02.png)
-
-
 
 # Key pair(login)
 4. Create new Key pair. then click
@@ -157,7 +154,7 @@ In private route
 8. In Connect to Linux instance, go to  SSH client for server connection details 
 
 
- [Network Setting](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_03.png
+ [Network Setting](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_03.png)
 
 # Connect to Ubuntu server with Git Bash
 
