@@ -198,6 +198,19 @@ In private route
 5. In Browser hit http://localhost:3001 shopbondhu website will be appears
 
 [Shopbondhu website](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/10-website-browser_01.png)  
+## Task 9: Test the private server (NAT check)
+Private EC2 can’t reach the internet (e.g. yum update or apt install hangs), these are the usual causes, roughly in order of likelihood:
+
+1. No NAT Gateway, or the route is missing. The private subnet’s route table needs 0.0.0.0/0 → nat-xxxx. Without it, the server has no path out.
+2. NAT Gateway is in the wrong subnet. It must sit in the public subnet, and that subnet’s route table must have 0.0.0.0/0 → Internet Gateway. A NAT in a private subnet has no way out itself.
+3. NAT Gateway has no Elastic IP. It needs one to reach the internet.
+4. Private subnet is associated with the wrong route table. Creating a route table isn’t enough; you must associate it with the private subnet explicitly. Otherwise it uses the main route table, which has no NAT route.
+5. Security group blocks outbound traffic. The default allows all outbound, but a custom one may not. It needs outbound HTTP (80) and HTTPS (443), plus DNS.
+6. Network ACL blocks traffic. NACLs are stateless, so you need to allow outbound and the return traffic on ephemeral ports (1024-65535) inbound.
+7. DNS is disabled. The VPC needs DNS resolution and DNS hostnames enabled, or package repository names won’t resolve.
+8. The instance got a public IP or sits in the wrong subnet. Check that it’s really in the private subnet.
+
+
 
 ## Task 10: Troubleshooting (written answers)
 Problem A Solution:
