@@ -132,7 +132,7 @@ In private route
 2. Application and OS Images section select Ubuntu OS
 3. Instance Type select t3.micro
 
-[Launch instance_01](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_01.png)
+[Launch instance](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_01.png)
 
 # Key pair(login)
 4. Create new Key pair. then click
@@ -180,6 +180,7 @@ In private route
 5. Add rule click 
 6. Type section select HTTP and Source Type section select anywhere-IPv4
 7. Create route
+
 [Security group](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/08-security-groups.png)
 
 ## Nginx Port Access
