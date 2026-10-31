@@ -20,7 +20,7 @@ This file contains instructions. No AWS resources have been created by generatin
 (10.0.0.0/16 represents a block of IPv4 addresses where the first 16 bits are locked as the network prefix, leaving 16 bits for individual devices (hosts))
 7. Create VPC Click and shopbondhu-vpc created
 
-[PVC](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/0352b90b71fb7266552d9ce9be25e13fb32b943e/screenshots/01-vpc.png)
+[PVC](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/12ddadbec3eb82803d39028ad14a14b1f3a5793a/screenshots/01-vpc.png)
 
 ## Task 2: Create the subnets
 
@@ -39,8 +39,9 @@ Private Subnet
 3. IPv4 subnet CIDR block 10.0.0.16/28
 4. Create Subnet
 
-[Public Subnet ]()
-[Private Subnet](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/79ae6e3ad6fbffaceec6b6fbcad499758bf598cf/screenshots/02-subnets_PVT.png)
+[Public Subnet ](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/12ddadbec3eb82803d39028ad14a14b1f3a5793a/screenshots/02-subnets_Pub.png)
+
+[Private Subnet](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/12ddadbec3eb82803d39028ad14a14b1f3a5793a/screenshots/02-subnets_PVT.png)
 
 ## Task 3: Internet Gateway
 
@@ -52,7 +53,7 @@ In Virtual Private Cloud Menu Select Internet Gateways
 4. Select Actions tab into internet gateways then select Attach to VPC
 5. Select shopbondhu-vpc,then create
 
-## Link Subnet Three
+[Internet Gateway](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/12ddadbec3eb82803d39028ad14a14b1f3a5793a/screenshots/03-igw-attached.png)
 
 ## Task 4: NAT Gateway
 
@@ -65,7 +66,7 @@ In Virtual Private Cloud Menu Select NAT Gateways
 5. Connectivity Type Public
 6. Create NAT gateway 
 
-## Link  One [NAT Gateways]()
+[NAT Gateways](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/12ddadbec3eb82803d39028ad14a14b1f3a5793a/screenshots/04-nat-gateway.png)
 
 ## Task 5: Route tables
 
