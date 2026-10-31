@@ -83,7 +83,7 @@ Another for Private Subnet (shopbondhu-private-subnet)
 3. Select shopbondhu-vpc
 4. Create route table
 
-## Link Subnet one [Public route]()
+[Public route](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/05-public-rt.png)
 
 5. Click Edit routes
 6. Add route
@@ -92,7 +92,6 @@ Another for Private Subnet (shopbondhu-private-subnet)
 9. Then route associated with Internet Gateway(shopbondhu-igw)
 10. Save Changes 
 
-## Link one [Edit routes]()
 
 ## Subnet associations with public route
 In public route 
@@ -101,7 +100,7 @@ In public route
 3. Public route association with public subnet(shopbondhu-public-subnet)
 4. Save associations
 
-## Link  one [Public Subnet associations]()
+
 
 ## Private Route
 
@@ -110,7 +109,7 @@ In public route
 3. Select shopbondhu-vpc
 4. Create route table
 
-## Link one [Private Route]()
+[Private Route](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/06-private-rt.png)
 
 5. Click Edit routes
 6. Add route
@@ -119,17 +118,12 @@ In public route
 9. Then route associated with NAT Gateway(shopbondhu-nat)
 10. Save Changes 
 
-## Link one [Private routes Edit]()
-
 ## Subnet associations with private route
 In private route 
 1. Select Subnet associations tab
 2. Click Edit subnet Associations
 3. private route association with private subnet(shopbondhu-private-subnet)
 4. Save associations
-
-
-## Link  one [Private Subnet associations]()
 
 ## Task 6: Launch the EC2 instances
 
@@ -138,7 +132,10 @@ In private route
 2. Application and OS Images section select Ubuntu OS
 3. Instance Type select t3.micro
 
-## Link  one [Launch instance]()
+[Launch instance_01](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_01.png)
+[Launch instance_02](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_02.png)
+
+
 
 # Key pair(login)
 4. Create new Key pair. then click
@@ -147,7 +144,7 @@ In private route
 7. Private key file formate select .pem
 8. Create key pair
 
-## Link  one [Key pair]()
+ [Key pair](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_02.png)
 
 # Network Setting
 1. Click Edit
@@ -160,7 +157,7 @@ In private route
 8. In Connect to Linux instance, go to  SSH client for server connection details 
 
 
-## Link  two [Launch instance]()
+ [Network Setting](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/07-ec2-instances_03.png
 
 # Connect to Ubuntu server with Git Bash
 
@@ -178,7 +175,7 @@ In private route
 1. sudo apt install nginx -y
 2. sudo systemctl status nginx
 
- ## Nginx Port Access
+ ## Security group
 1. Go to AWS Instance shopbondhu-web ,then Connect
 2. Select Security Tab
 3. Click Security groups
@@ -186,8 +183,24 @@ In private route
 5. Add rule click 
 6. Type section select HTTP and Source Type section select anywhere-IPv4
 7. Create route
-8. In Browser hit http://13.210.117.22,Welcome to nginx message will be appears
+[Security group](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/08-security-groups.png)
 
-## Link  two [Nginx Route]()
+## Nginx Port Access
+1. In Browser hit http://13.210.117.22,Welcome to nginx message will be appears
 
-Task 8: Deploy the frontend
+[Nginx Status](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/09-nginx-status.png)
+
+[Nginx Broswer](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/10-website-browser.png)
+
+## Task 8: Deploy the frontend
+1. git clone https://github.com/sumaya-shemo/shopbondhu.git
+2. cd shopbondhu
+3. npm i
+4. npm run dev
+5. In Browser hit http://localhost:3001 shopbondhu website will be appears
+
+[Shopbondhu website](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/10-website-browser_01.png)  
+
+## History of Linux Command
+[History](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/History.png)
+
