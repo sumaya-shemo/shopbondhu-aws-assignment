@@ -199,6 +199,21 @@ In private route
 
 [Shopbondhu website](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/10-website-browser_01.png)  
 
+## Task 10: Troubleshooting (written answers)
+Problem A Solution:
+SSH working does not necessarily mean the website will work because SSH and HTTP/HTTPS use different network ports. I would first verify that the web server service is running and listening on ports 80 or 443. Then I would check Security Groups, Network ACLs, route tables, and DNS configuration. Since the EC2 instance is in a private subnet, I would also verify whether traffic is reaching it through an Application Load Balancer or another approved entry point. Finally, I would test the application locally using curl and inspect web server logs to identify the root cause.
+
+Problem B Solution:
+I would suspect a NAT Gateway or routing issue because the backend EC2 instance is in a private subnet. 
+First, I would verify that the NAT Gateway is deployed in a public subnet and has an Elastic IP.
+Second, I would check that the public subnet's route table points to the Internet Gateway.
+Third, I would verify that the private subnet's route table has a default route pointing to the NAT Gateway. 
+Finally, I would test internet connectivity and DNS resolution from the backend EC2 instance
+
+
+
+
+
 ## History of Linux Command
 [History](https://github.com/sumaya-shemo/shopbondhu-aws-assignment/blob/8aca5cd58b1760cbc919dc1634aaea00ffb645b0/screenshots/History.png)
 
